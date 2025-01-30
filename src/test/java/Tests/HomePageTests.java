@@ -52,6 +52,26 @@ public class HomePageTests {
 		//CLick on order History
 		ObjMyAccPage.ClickMyOrders();
 	}
+	
+	@Test
+	public void TestLastOrderPrice() {
+		Utility ObjUtill = new Utility();
+		//Launching Browser
+		Driver = ObjUtill.LaunchBrowser("CHROME");
+		
+		HomePage ObjHomePage = new HomePage(Driver);
+		LoginPage ObjLoginPage = new LoginPage(Driver);
+		MyAccountPage ObjMyAccPage = new MyAccountPage(Driver);
+		
+		//CLick on SignIn
+		ObjHomePage.clickLogin();
+		
+		//Login to application
+		ObjLoginPage.AppLogin("umamahesh833@gmail.com", "Mother@123");
+		
+		//CLick on order History
+		ObjMyAccPage.ClickMyOrders();
+	}
 
 
 }
