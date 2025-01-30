@@ -71,6 +71,8 @@ public class HomePageTests {
 		
 		//CLick on order History
 		ObjMyAccPage.ClickMyOrders();
+
+		//Added more tests in report
 	}
 
 
